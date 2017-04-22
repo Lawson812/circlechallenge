@@ -1,0 +1,23 @@
+.myCircle{
+    border-radius:50%;
+    position:relative;
+    background: radial-gradient(circle at 100px 100px, #330033, #000);
+    
+    
+    
+    
+    
+}
+.innerCircle{
+    border-radius:50%;
+    background: radial-gradient(circle, #5b307c, #000);
+    border: 3px solid;
+    border-color: #4a2468;
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index: 1;
+}
+
+.myCircle:
