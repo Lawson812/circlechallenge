@@ -1,10 +1,11 @@
 @font-face{
     font-family:futurefont;
-    src:url(duralith.ttf);
+    src:url(DURALITH.TTF);
 }
 @font-face{
     font-family:aerolite;
-    src:url(aerolite.otf);}
+    src:url(Aerolite.otf);
+}
 
 h1{
     font-family: aerolite;
@@ -76,6 +77,7 @@ position:absolute;
     color:darkorange;
     display:inline;
     position:absolute;
+    font-size:smaller;
 }
 .triangleImg{
     width:75%;
