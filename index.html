@@ -7,16 +7,23 @@
     <title>Circle Challenge: 8 Ball</title>
     <link rel="stylesheet" type="text/css" href=style.css> </head>
     <body>
-        <div id="header"></div><label for='thisCircle'>Type a numeric size to make a your magic 8 ball!</label>
+        <div id="header"><h1>Magic 8 ball</h1></div><br><br>
+        <div id="oberon">
+        <label for='thisCircle'>Type a numeric size to make a your magic 8 ball!</label>
      <input type='text' id='circleRadius' name='thisCircle' value='150'>
-     <button type='button' onclick=makeCircle()>Let's get circular.</button>
+     <button type='button' onclick=makeCircle()>Let's get circular.</button><br><br><br>
     
-    <p>The area of the circle is <span id='area'></span> <br>Make it between 100-400 to see your fortune.</p>
-        <label for='question'>Ask the magic 8 ball a question</label><input type='text'>
+    <p>The area of the circle is <span id='area'></span> <br>Make it between 100-400 to see your fortune.</p><br><br>
+            </div>
+        
     
     
     </body> 
     
     <script src="javascript.js"></script> 
-
+<script type = "text/javascript"
+         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		
+      <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
 </html>
