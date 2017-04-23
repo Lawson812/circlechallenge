@@ -44,10 +44,13 @@ var responses=["All signs point to no", "Ask again later", "Who knows?", "It is 
     triangleImg.src='triangle.png';
     triangleImg.className='triangleImg';
     innerTriangle.appendChild(triangleImg);
+    var textDiv= document.createElement('div');
+    textDiv.setAttribute('id','textDiv');
+    innerTriangle.appendChild(textDiv);
     var fortuneText = document.createElement('p');
     fortuneText.innerText=responses[ranNum];
     fortuneText.className='fortuneText';
-    innerTriangle.appendChild(fortuneText)
+    textDiv.appendChild(fortuneText)
 
 }
 

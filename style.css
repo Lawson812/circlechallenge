@@ -65,27 +65,27 @@ body{
 }
 .innerTriangle {
 display: inline-block;
-/*
-background-repeat:no-repeat;
-background-size: 70%;
-*/
-margin-left:15%;
-margin-top:-50%;    
 width:inherit;
 height:inherit;
+position:absolute;
 
 }
 .fortuneText{
     width:30%;
     margin-left:0%;
     color:darkorange;
-    display:inline-block;
+    display:inline;
     position:absolute;
 }
 .triangleImg{
-    width:50%;
-    height:50%;
+    width:75%;
+    height:75%;
     position:relative;
+    margin-left:15%;
+    margin-top:20%;
     
 }
-
+#textDiv{
+    z-index: 11;
+    position:relative;
+}
