@@ -29,12 +29,12 @@ if(radius <100){
     var wrongSize=document.createElement('p');
     wrongSize.innerText="Your response is too small, but here's your tiny 8-ball";
     firstSection.appendChild(wrongSize);
-}    else if(radius >400){
+}    else if(radius >300){
     var wrongSize=document.createElement('p');
     wrongSize.innerText="Your response is too big, but here's your huge 8-ball"
     firstSection.appendChild(wrongSize)
 } else{
-var responses=["All signs point to no", "Ask again later", "Who knows?", "It is certain","You will learn soon","Maybe","Trust your heart"];
+var responses=["All signs point to no", "Ask again later", "Who knows?", "It is certain","Google it","Maybe","Trust your heart"];
     var ranNum =Math.floor(Math.random()*responses.length);
  
     var innerTriangle = document.createElement('div');
@@ -51,6 +51,13 @@ var responses=["All signs point to no", "Ask again later", "Who knows?", "It is 
     fortuneText.innerText=responses[ranNum];
     fortuneText.className='fortuneText';
     textDiv.appendChild(fortuneText)
+    if(radius <=200){
+        fortuneText.style.fontSize='12px';
+    }else if(radius > 200){
+        fortuneText.style.fontSize='auto';
+        textDiv.style.marginTop='-80%';
+
+    }
 
 }
 
