@@ -1,6 +1,6 @@
 @font-face{
     font-family:futurefont;
-    src:url(DURALITH.TTF);
+    src:url(DURALITH.ttf);
 }
 @font-face{
     font-family:aerolite;
@@ -59,7 +59,7 @@ h1{
     -o-animation:fadeIn 2s ;
     -moz-animation:fadeIn 2s ;
     animation: fadeIn 2s ;
-    
+    z-index: 1;
     
     
 }
@@ -72,7 +72,7 @@ h1{
     top: 50%;
     left:50%;
     transform:translate(-50%,-50%);
-    z-index: 1;
+    z-index: 4;
 }
 
 #header{
@@ -103,12 +103,13 @@ label{
 }
 body{
     background-image: url(background.jpg);
-}
+}   
 .innerTriangle {
 display: inline-block;
 width:inherit;
 height:inherit;
 position:absolute;
+z-index: 2;
     
 -webkit-animation:slideUp 2s ;
     -o-animation:slideUp 2s ;
@@ -131,6 +132,7 @@ position:absolute;
     position:relative;
     margin-left:15%;
     margin-top:20%;
+    z-index: ;
     
 }
 #textDiv{
@@ -140,5 +142,6 @@ position:absolute;
     margin-left:30%;
     width:80%;
     height:30%;
+    z-index: 2;
     
 }
